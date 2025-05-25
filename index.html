@@ -1,123 +1,179 @@
-<!DOCTYPE HTML>
-<!--
-    Paradigm Shift by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Vusumzi Mabadi Portfolio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="Portfolio of Vusumzi Mabadi, Data Analyst skilled in Power BI, SQL, Python, and Tableau." />
-    <meta name="keywords" content="Data Analyst, Portfolio, Power BI, SQL, Python, Tableau" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mabadi Solutions | Business Automation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    /* Container for top-right banners */
+    .top-right-banners {
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      display: flex;
+      gap: 15px;
+      z-index: 20;
+    }
+
+    .banner-link {
+      background-color: #0077b5;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      transition: background-color 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .banner-link:hover {
+      background-color: #005f8d;
+    }
+
+    .hero {
+      position: relative;
+      text-align: center;
+      padding: 40px 20px;
+      min-height: 25vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(-45deg, #003f7f, #006f88, #007f6b, #ff6f61);
+      background-size: 600% 600%;
+      animation: gradientShift 15s ease infinite;
+      border-bottom-left-radius: 50% 30%;
+      border-bottom-right-radius: 50% 30%;
+      z-index: 1;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .hero img {
+      width: 180px;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transform: translateY(-30px);
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      z-index: 1;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+      z-index: 1;
+    }
+
+    .hero .cta-button {
+      padding: 12px 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      background-color: #0077b5;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      z-index: 1;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero .cta-button:hover {
+      background-color: #005f8d;
+    }
+
+    .services {
+      padding: 60px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      background-color: #ffffff;
+    }
+
+    .service-card {
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      padding: 30px;
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      margin-top: 0;
+      color: #003f7f;
+    }
+
+    footer {
+      background-color: #003f7f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
-<body class="is-preload">
+<body>
 
-<!-- Wrapper -->
-<div id="wrapper">
+  <!-- Top Right Banners -->
+  <div class="top-right-banners">
+    <a href="solutions.html" class="banner-link">Discover Our Products</a>
+    <a href="pricing.html" class="banner-link">Pricing</a>
+  </div>
 
-    <!-- Intro -->
-    <section class="intro">
-        <header>
-            <h1>Vusumzi Mabadi's Portfolio</h1>
-            <p>
-                Data Analyst skilled in Power BI, SQL, Python and Tableau 
-                <a href="https://www.linkedin.com/in/vusumzi-mabadi-24804a186/">@VusumziMabadi</a>
-            </p>
-            <ul class="actions">
-                <li><a href="#car-dashboard" class="arrow scrolly"><span class="label">Next</span></a></li>
-            </ul>
-        </header>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="logo.png" alt="Mabadi Solutions Logo" />
+    <h1>Smarter Automations for Growth</h1>
+    <p>Transform your business operations with seamless automation and focus on what matters most.</p>
+    <a href="solutions.html" class="cta-button">Discover Our Solutions</a>
+  </section>
 
-    <!-- Car Dashboard -->
-    <section id="car-dashboard">
-        <header>
-            <h2>Car Model Insight Dashboard</h2>
-        </header>
-        <div class="content">
-            <p>
-                This dashboard offers insights into car quantity and performance metrics, such as the distribution of cars by manufacturer and total mileage across various makes and models over time.
-            </p>
-            <span class="image main"><img src="images/Cards.jpg" alt="Car Dashboard" /></span>
-            <ul class="actions">
-                <li><a href="https://github.com/VusiMabad/Car-Manufacture-Dashboard" class="button large">View Project Files on GitHub</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Survey Dashboard -->
-    <section id="survey-dashboard">
-        <header>
-            <h2>Data Profession Survey Power BI Dashboard</h2>
-        </header>
-        <div class="content">
-            <p>
-                This Power BI dashboard provides a visual breakdown of survey data collected from approximately 630 data professionals. It showcases key metrics such as average salaries, preferred programming languages, and job satisfaction ratings across various data careers.
-            </p>
-            <span class="image main"><img src="images/PowerBI.png" alt="Power BI Survey Dashboard" /></span>
-            <ul class="actions">
-                <li><a href="images/Power BI.png" class="button large">View Project</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Tableau Dashboard -->
-    <section id="tableau-dashboard">
-        <header>
-            <h2><a href="https://public.tableau.com/app/profile/vusi6538/viz/AirBnBListingDataVisualization/Dashboard1">Dashboard Design With Tableau</a></h2>
-        </header>
-        <div class="content">
-            <p>
-                This project uses Airbnb listing data from Amsterdam, Netherlands. The dashboard visualizes relationships between dataset features, helping potential hosts understand the market and optimize their listings.
-            </p>
-            <span class="image main"><img src="images/index.png" alt="Tableau Dashboard" /></span>
-            <ul class="actions">
-                <li><a href="https://public.tableau.com/app/profile/vusi6538/viz/AirBnBListingDataVisualization/Dashboard1" class="button large">View Project</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Contact Info -->
-    <footer>
-        <ul class="items">
-            <li>
-                <h3>Email</h3>
-                <a href="mailto:vusumzimabadi@gmail.com">vusumzimabadi@gmail.com</a>
-            </li>
-            <li>
-                <h3>Phone</h3>
-                <a href="tel:+27637463058">063 746 3058</a>
-            </li>
-            <li>
-                <h3>Address</h3>
-                <span>Cape Town, Western Cape</span>
-            </li>
-            <li>
-                <h3>Elsewhere</h3>
-                <ul class="icons">
-                    <li><a href="https://www.linkedin.com/in/vusumzi-mabadi-24804a186/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="https://github.com/VusiMabad" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                </ul>
-            </li>
-        </ul>
-    </footer>
-
-    <!-- Copyright -->
-    <div class="copyright">
-        &copy; Vusumzi Mabadi. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.
+  <!-- Services -->
+  <section id="services" class="services">
+    <div class="service-card">
+      <h3>Lead Management Automation</h3>
+      <p>Capture, qualify, and assign leads instantly with smart integrations tailored to your workflow.</p>
     </div>
-</div>
+    <div class="service-card">
+      <h3>Appointment Booking</h3>
+      <p>Let your customers book time directly with your team through fully automated scheduling systems.</p>
+    </div>
+    <div class="service-card">
+      <h3>Workflow Automation</h3>
+      <p>Eliminate repetitive work by connecting your CRM, email, and apps into seamless automated workflows.</p>
+    </div>
+  </section>
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+  <footer>
+    <p>&copy; 2025 Mabadi Solutions. All rights reserved. | Contact: info@mabadisolutions.com</p>
+  </footer>
 
 </body>
 </html>
